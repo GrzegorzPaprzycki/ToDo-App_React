@@ -41,15 +41,15 @@ const TaskList = (props) => {
   return (
     <>
       <div className="active">
-        <h1>Zadania do zrobienia</h1>
-        {activeTasks.length > 0 ? activeTasks : <p>brak zadań, ale jesteś szczęsliwym człowiekiem!</p>}
+        <h1>Tasks to do</h1>
+        {activeTasks.length > 0 ? activeTasks : <p>No tasks! You are lucky or lazy ;)</p>}
       </div>
 
       <hr />
 
       <div className="done">
-        <h3>Zadania zrobione <em>({done.length})</em></h3>
-        {done.length > 5 && <span style={{ fontSize: 10 }}>wyświetlonych jest jedynie 5 ostatnich zadań</span>}
+        <h3>Tasks done <em>({done.length})</em></h3>
+        {done.length > 5 && <span style={{ fontSize: 10 }}>Only last 5 tasks are displayed</span>}
         {doneTasks.slice(0, 5)}
 
       </div>
