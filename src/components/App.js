@@ -38,7 +38,6 @@ class App extends Component {
   }
 
   addTask = (text, date, important) => {
-    // console.log("dodany obiekt");
     const task = {
       id: this.counter,
       text, // tekst z inputa
