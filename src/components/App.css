@@ -1,4 +1,81 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #111;
+}
+
+body {
+  min-height: 130vh;
+}
+
 .App {
   text-align: center;
-  padding: 15px
 }
+
+.App>h1 {
+  line-height: 3;
+  background-color: rgb(30, 230, 146);
+}
+
+.active h1 {
+  margin-bottom: 10px;
+  font-size: 22px;
+  line-height: 2.5;
+  background-color: rgba(243, 120, 6, 0.7);
+}
+
+div.active>div {
+  padding: 15px 0;
+}
+
+div.active div.task {
+  padding: 5px 0;
+  transition: .2s;
+}
+
+div.active div.task:nth-child(even) {
+  background-color: rgba(243, 120, 6, 0.3);
+}
+div.active div.task:nth-child(odd) {
+  background-color: rgba(243, 120, 6, 0.5);
+}
+
+div.active button,
+div.done button {
+  font-size: 12px;
+  vertical-align: 15%;
+  padding: 2px 10px;
+  margin-left: 10px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: .2s;  
+  background-color: #fff;
+}
+/* button.delete {
+  box-shadow: 0 0 0 2px white, 0 0 0 4px rgb(230, 41, 7);
+} */
+
+button.done:hover {
+box-shadow: 0 0 0 3px white, 0 0 0 5px rgb(30, 230, 146);
+letter-spacing: 1px;
+}
+button.delete:hover {
+  box-shadow: 0 0 0 3px white, 0 0 0 5px rgb(230, 41, 7);
+  letter-spacing: 1px;
+}
+
+div.done h3 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 22px;
+  line-height: 2.5;
+  background-color: lightgray;
+}
+
+div.done div {
+  padding: 8px;
+}
+
+

@@ -42,10 +42,8 @@ const TaskList = (props) => {
     <>
       <div className="active">
         <h1>Tasks to do</h1>
-        {activeTasks.length > 0 ? activeTasks : <p>No tasks! You are lucky or lazy ;)</p>}
+        {activeTasks.length > 0 ? <div>{activeTasks}</div> : <p>No tasks! Time to add some cool tasks :)</p>}
       </div>
-
-      <hr />
 
       <div className="done">
         <h3>Tasks done <em>({done.length})</em></h3>

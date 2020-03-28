@@ -28,7 +28,6 @@ class App extends Component {
   }
 
   deleteTask = (id) => {
-    console.log("delete elementu o id " + id);
     // const tasks = [...this.state.tasks];
     // const index = tasks.findIndex(task => task.id === id);
     // tasks.splice(index, 1);
@@ -44,7 +43,6 @@ class App extends Component {
   }
 
   changeTaskStatus = (id) => {
-    console.log("change w stanie elementu o id " + id);
     const tasks = Array.from(this.state.tasks);
     tasks.forEach(task => {
       if (task.id === id) {
@@ -68,7 +66,6 @@ class App extends Component {
       finishDate: null
     }
     this.counter++
-    console.log(task, this.counter);
 
     this.setState(prevState => ({
       tasks: [...prevState.tasks, task]

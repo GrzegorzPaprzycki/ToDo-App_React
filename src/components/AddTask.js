@@ -49,7 +49,7 @@ class AddTask extends Component {
 
     return (
       <div className="form">
-        <input type="text" placeholder="add task" value={this.state.text} onChange={this.handleText} />
+        <input type="text" placeholder="write task name" value={this.state.text} onChange={this.handleText} />
         <input type="checkbox" checked={this.state.checked} id="important" onChange={this.handleCheckbox} />
         <label htmlFor="important">Priority</label><br />
         <label htmlFor="date">Finish date</label>
