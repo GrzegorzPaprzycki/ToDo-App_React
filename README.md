@@ -10,3 +10,5 @@ All the best,
 
 ------------  
 Grzegorz Paprzycki
+
+P.S. App has been created basing on training "Samuraj Programowania - React od Podstaw" (Udemy). 
